@@ -1,0 +1,12 @@
+{
+  "name": "LeMonde Unlimited",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Pour voir les articles de lemonde.fr reserves aux abonnes.",
+  "content_scripts": [
+    {
+      "matches": ["http://www.lemonde.fr/*"],
+      "js": ["jquery-1.8.2.min.js", "lemonde.js"]
+    }
+  ]
+}
