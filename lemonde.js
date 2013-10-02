@@ -4,9 +4,12 @@ if (teaserArticle) {
     type: 'GET',
     url: document.URL,
   }).done(function(response){
-    var original = $(response);
+    var original = $(response).find('#articleBody')[0];
     var article = document.getElementById('articleBody');
-    article.parentNode.replaceChild(original.find('#articleBody')[0], article);
+    var zenButton = article.getElementsByClassName('btn_lecture_zen')[0];
+    console.log(zenButton)
+    original.appendChild(zenButton)
+    article.parentNode.replaceChild(original, article);
     teaserArticle.style.display = 'none';
   });
 }
