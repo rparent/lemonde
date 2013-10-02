@@ -22,7 +22,7 @@ if (zenButton) {
     }, 100);
     setTimeout(function() {
       stopLoopFunction(overlayRemovalLoop)
-    }, 5000);
+    }, 10000);
   }, false);
 }
 
